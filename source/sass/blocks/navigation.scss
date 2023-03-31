@@ -1,0 +1,76 @@
+.navigation {
+  @media screen and (max-width: $tablet-max) {
+    &--active {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $green-bg;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: $full) {
+    gap: 142px;
+  }
+}
+
+.navigation__list {
+  flex-shrink: 0;
+  text-transform: lowercase;
+  font-size: 15px;
+  line-height: 18px;
+  color: $green-dark;
+
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+    font-size: 25px;
+    line-height: 30px;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      margin: 50px 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.navigation__item {
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.navigation__connect-button {
+  width: 190px;
+  padding: 19px 0;
+
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+
+    &--active {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 22px auto 73px;
+  padding: 0 28px;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 26px auto 80px;
+  }
+
+  @media screen and (min-width: $full) {
+    gap: 156px;
+  }
+}

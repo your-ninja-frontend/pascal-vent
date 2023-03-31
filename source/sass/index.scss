@@ -1,0 +1,21 @@
+// Global
+
+@import "global/variables.scss";
+@import "global/colors.scss";
+@import "global/style.scss";
+
+// UI
+
+@import "ui/button-menu.scss";
+@import "ui/button.scss";
+
+// Layout
+
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+
+// Blocks
+
+@import "blocks/menu.scss";
+@import "blocks/navigation.scss";

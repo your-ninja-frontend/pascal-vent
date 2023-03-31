@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  width: 100%;
+  max-width: 447px;
+  margin: 0;
+  font-family: $ruberoid;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 15px $button-bg1, inset 2px -2px 12px $button-bg2;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    border-radius: 30px;
+  }
+
+  &--small {
+    border-radius: 17px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  &--white-bg {
+    box-shadow: 0 0 0 10px $button-bg3, inset 2px -2px 12px $button-bg2;
+  }
+
+  &:hover {
+    background-color: $green-hover;
+  }
+}

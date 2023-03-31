@@ -1,0 +1,26 @@
+.button-menu {
+  display: none;
+  
+  @media screen and (max-width: $tablet-max) {
+    display: block;
+    width: 49px;
+    height: 49px;
+    padding: 0;
+    border: none;
+    border-radius: 15px;
+    background-image: url("/img/menu-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $white;
+    box-shadow: 0 0 0 10px $button-menu-bg1, 0px 4px 10px $button-menu-bg2;
+    cursor: pointer;
+
+    &--active {
+      margin-left: auto;
+      margin-top: 25px;
+      margin-right: 25px;
+      background-color: $green;
+      background-image: url("/img/icon-close.svg");
+    }
+  }
+}

@@ -23,7 +23,7 @@ const createSass = gulpSass(sass);
 
 const paths = {
   styles: {
-    src: 'source/sass/main.scss',
+    src: 'source/sass/index.scss',
     dest: 'css/'
   },
   scripts: {

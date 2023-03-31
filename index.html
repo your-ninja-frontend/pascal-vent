@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pascal Vent</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>123</h1>
+
+<body class="page__body">
+  <header class="header">
+    <div class="menu">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Логотип" width="168" height="53">
+      </a>
+      <nav class="navigation">
+        <button class="button-menu"></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Услуги</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">О Нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Польза продукта</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Оборудование</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Этапы работы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">
+              Отзывы
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__connect-button button button--small button--white-bg">Связаться</button>
+      </nav>
+    </div>
+    <div class="container">
+      <h1 class="header__title">
+        Чистый воздух
+        <span class="header__title--line">вместе с</span>
+        <span class="header__title--company">Pascal vent</span>
+      </h1>
+      <p class="header__description">Проектирование, поставка и монтаж систем вентиляции и кондиционирования</p>
+      <address class="header__contacts">
+        <span class="header__contacts-item header__contacts--place">Московский регион, Москва</span>
+        <div class="header__contacts-tel-wrapper">
+          <a class="header__contacts-item header__contacts--tel" href="tel:+74923736331">+ 7 492 373 63 31</a>
+          <a class="header__contacts-item header__contacts--tel" href="tel:+74243678929">+ 7 424 367 89 29</a>
+        </div>
+      </address>
+      <button class="button header__button">Оставить заявку</button>
+    </div>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.webp" type="image/webp">
+      <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.png" type="image/png">
+      <img class="header__bg-image" src="img/header-bg-img.png" srcset="img/header-bg-img.webp" alt="" width="375"
+        height="356">
+    </picture>
+  </header>
+  <main class="page__main">
+
+  </main>
+  <footer></footer>
+
+  <script src="/js/script.min.js"></script>
 </body>
+
 </html>

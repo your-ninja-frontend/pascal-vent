@@ -19,8 +19,8 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип" width="168" height="53">
       </a>
+      <button class="button-menu"></button>
       <nav class="navigation">
-        <button class="button-menu"></button>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="">Услуги</a>
@@ -46,30 +46,348 @@
         <button class="navigation__connect-button button button--small button--white-bg">Связаться</button>
       </nav>
     </div>
-    <div class="container">
-      <h1 class="header__title">
-        Чистый воздух
-        <span class="header__title--line">вместе с</span>
-        <span class="header__title--company">Pascal vent</span>
-      </h1>
-      <p class="header__description">Проектирование, поставка и монтаж систем вентиляции и кондиционирования</p>
-      <address class="header__contacts">
-        <span class="header__contacts-item header__contacts--place">Московский регион, Москва</span>
-        <div class="header__contacts-tel-wrapper">
-          <a class="header__contacts-item header__contacts--tel" href="tel:+74923736331">+ 7 492 373 63 31</a>
-          <a class="header__contacts-item header__contacts--tel" href="tel:+74243678929">+ 7 424 367 89 29</a>
-        </div>
-      </address>
-      <button class="button header__button">Оставить заявку</button>
+    <div class="header__promo">
+      <div class="container">
+        <h1 class="header__title">
+          Чистый воздух
+          <span class="header__title--line">вместе с</span>
+          <span class="header__title--company">Pascal vent</span>
+        </h1>
+        <p class="header__description">Проектирование, поставка и монтаж систем вентиляции и кондиционирования</p>
+        <address class="header__contacts">
+          <span class="header__contacts-item header__contacts--place">Московский регион, Москва</span>
+          <div class="header__contacts-tel-wrapper">
+            <a class="header__contacts-item header__contacts--tel" href="tel:+74923736331">+ 7 492 373 63 31</a>
+            <a class="header__contacts-item header__contacts--tel" href="tel:+74243678929">+ 7 424 367 89 29</a>
+          </div>
+        </address>
+        <button class="button header__button">Оставить заявку</button>
+      </div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.webp" type="image/webp">
+        <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.png" type="image/png">
+        <img class="header__bg-image" src="img/header-bg-img.png" srcset="img/header-bg-img.webp" alt="" width="375"
+          height="356">
+      </picture>
     </div>
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.webp" type="image/webp">
-      <source media="(min-width: 1200px)" srcset="img/header-bg-img-desktop.png" type="image/png">
-      <img class="header__bg-image" src="img/header-bg-img.png" srcset="img/header-bg-img.webp" alt="" width="375"
-        height="356">
-    </picture>
   </header>
   <main class="page__main">
+    <section class="services">
+      <div class="container services__description">
+        <h2 class="services__title">
+          Предоставляемые
+          <span class="services__title--line">
+            услуги
+          </span>
+        </h2>
+        <p class="services__info">При разработке проекта предложим техническое решение оптимальное по соотношению цены и
+          качества, оно идеально
+          впишется в ваш дизайн, а также будет учитывать все ваши пожелания.
+        </p>
+        <p class="services__info">Монтаж выполняется опытными бригадами с соблюдением всех действующих технических норм,
+          правил безопасности и
+          строго по согласованному проекту.
+        </p>
+        <p class="services__info">Одинаково эффективно выполняем проектирование и монтаж на объектах любой сложности –
+          от небольшой квартиры,
+          до
+          объектов со сложными технологическими процессами на основе действующей нормативной документации.
+        </p>
+      </div>
+      <div class="tab-slider">
+        <div class="tab-slider__button-wrapper">
+          <button class="tab-slider__button tab-slider__button--left">Кондиционирование
+            <svg class="tab-slider__icon-button">
+              <use href="/img/sprite/sprite.svg#icon-cond" xlink:href="/img/sprite/sprite.svg#icon-cond" />
+            </svg>
+          </button>
+          <button class="tab-slider__button tab-slider__button--right
+          tab-slider__button--active">Система вентиляции
+            <svg class="tab-slider__icon-button tab-slider__icon-button--active">
+              <use href="/img/sprite/sprite.svg#icon-vent" xlink:href="/img/sprite/sprite.svg#icon-vent" />
+            </svg>
+          </button>
+        </div>
+        <div class="tab-slider__slide tab-slider__slide--vent">
+          <ul class="tab-slider__list">
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon1.svg" alt="">
+              </div>
+              Проектирование систем кондиционирования
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon2.svg" alt="">
+              </div>
+              Монтаж сплит-систем
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon3.svg" alt="">
+              </div>
+              Монтаж мульти сплит-систем
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon4.svg" alt="">
+              </div>
+              Монтаж VRV и VRF систем
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon5.svg" alt="">
+              </div>
+              Монтаж фанкойлов
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon6.svg" alt="">
+              </div>
+              Монтаж настенных, канальных
+              и кассетных кондиционеров
+            </li>
+          </ul>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/tab-slider-ventilation-desctop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="/img/tab-slider-ventilation-desctop.jpg" type="image/jpeg">
+            <source media="(min-width: 768px)" srcset="/img/tab-slider-ventilation-tablet.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/img/tab-slider-ventilation-tablet.jpg" type="image/jpeg">
+            <img class="tab-slider__img" src="/img/tab-slider-ventilation.jpg" srcset="/img/tab-slider-ventilation.webp"
+              alt="" width="345" height="170">
+          </picture>
+        </div>
+        <div class="tab-slider__slide
+        tab-slider__slide--cond tab-slider__slide--active">
+          <ul class="tab-slider__list">
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon1.svg" alt="">
+              </div>
+              Проектирование систем вентиляции любой сложности
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon7.svg" alt="">
+              </div>
+              Монтаж приточной вентиляции
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon8.svg" alt="">
+              </div>
+              Монтаж вытяжной вентиляции
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon9.svg" alt="">
+              </div>
+              Монтаж вентиляции с увлажнением воздуха
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon10.svg" alt="">
+              </div>
+              Монтаж вентиляции с рекуператором
+            </li>
+            <li class="tab-slider__list-item">
+              <div class="tab-slider__icon-wrapper">
+                <img src="/img/tab-slider-icon11.svg" alt="">
+              </div>
+              Монтаж вентиляции
+              с осушением для бассейна
+            </li>
+          </ul>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/tab-slider-air-conditioner-desctop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="/img/tab-slider-air-conditioner-desctop.jpg" type="image/jpeg">
+            <source media="(min-width: 768px)" srcset="/img/tab-slider-air-conditioner-tablet.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/img/tab-slider-air-conditioner-tablet.jpg" type="image/jpeg">
+            <img class="tab-slider__img" src="/img/tab-slider-air-conditioner.jpg"
+              srcset="/img/tab-slider-air-conditioner.webp" alt="" width="345" height="170">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container products__container-title">
+        <h2 class="products__title">
+          Комплексное решение
+          по монтажу и <span class="products__title--line"></span>
+          Вентиляции под ключ
+          <span class="products__title--line-before"></span>
+        </h2>
+      </div>
+      <div class="products__wrapper container">
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 100 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-apartaments-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-apartaments-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-apartaments.jpg"
+                srcset="/img/product-card-img-apartaments.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Квартиры и офисы</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 100 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-store-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-store-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-store.jpg"
+                srcset="/img/product-card-img-store.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Магазины и ТЦ</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 150 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-fitness-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-fitness-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-fitness.jpg"
+                srcset="/img/product-card-img-fitness.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Фитнес центры</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 150 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-pools-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-pools-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-pools.jpg"
+                srcset="/img/product-card-img-pools.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Бассейны</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 200 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-houses-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-houses-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-houses.jpg"
+                srcset="/img/product-card-img-houses.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Загородные дома, коттеджи, таунхаусы</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 200 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-cafes-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-cafes-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-cafes.jpg"
+                srcset="/img/product-card-img-cafes.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Рестораны, кафе, бары</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="" class="">
+            <span class="product-card__price">от 200 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-clinic-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-clinic-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-clinic.jpg"
+                srcset="/img/product-card-img-clinic.webp" alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Стоматологии, клиники</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a class="product-card__link" href="">
+            <span class="product-card__price">от 200 000 <b class="product-card__price--currency">₽</b></span>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-spa-full.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/img/product-card-img-spa-full.jpg" type="image/jpeg">
+              <img class="product-card__img" src="/img/product-card-img-spa.jpg" srcset="/img/product-card-img-spa.webp"
+                alt="Квартиры и офисы" width="152" height="131">
+            </picture>
+            <p class="product-card__info">Салоны красоты, СПА</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <div class="advantage__container-title container">
+        <h2 class="advantage__title">
+          3 простых шага <span class="advantage__title-line"></span>
+          к очищению воздуха
+        </h2>
+      </div>
+      <div class="advantage__scheme">
+        <div class="advantage__scheme-wrapper">
+          <p class="advantage__scheme-info advantage__scheme-info--item-1">Ваше желание</p>
+          <p class="advantage__scheme-info advantage__scheme-info--item-2">Заявка</p>
+          <p class="advantage__scheme-info advantage__scheme-info--item-3">Реализация</p>
+        </div>
+      </div>
+      <div class="advantage__info container">
+        <h3 class="advantage__info-title">Кажется, это знак...</h3>
+        <ul class="advantage__list">
+          <li class="advantage__item">Получите скидку 5% на монтаж при заполнении анкеты на сайте</li>
+          <li class="advantage__item">Бесплатно сделаем проект и пусконаладку системы при заказе монтажа</li>
+          <li class="advantage__item">Кэшбек до 10% дизайнерам при передаче Клиента и заказе у нас проекта с монтажом!
+          </li>
+        </ul>
+      </div>
+    </section>
+    <article class="order">
+      <form class="order__form container" action="#">
+        <h2 class="order__title">Оставьте заявку и мы с вами свяжемся</h2>
+        <div class="order__inner-wrapper">
+          <input class="order__input" type="text" placeholder="Ваше имя">
+          <input class="order__input" type="tel" placeholder="Номер телефона">
+          <button class="order__button button button--small" type="submit" disabled>Отправить</button>
+        </div>
+      </form>
+    </article>
+    <section class="about container">
+      <div class="about__info">
+        <h2 class="about__title">
+          О нас
+          <span class="about__title--company-name">Pascal vent</span>
+          особенности
+        </h2>
+        <p class="about__description">Мы любим то, чем занимаемся – поэтому у нас индивидуальный подход к каждому
+          человеку, креативные решения для проекта любой сложности и высокий уровень клиентского сервиса.</p>
+        <p class="about__description">Именно поэтому нам доверяют сложнейшие задачи, рекомендуют нас и возвращаются
+          вновь. Доверьте нам воплощение ваших самых изысканных и технологичных задач, и мы сделаем всё с высочайшим
+          уровнем сервиса <b>Pascal Vent</b>.</p>
+        <p class="about__description">
+          <b class="about__description--semi-bold">Pascal Vent</b> гарантирует сертифицированные современные системы,
+          оборудование, качественные материалы и самые оптимальные решения под любой бюджет.
+        </p>
+      </div>
+      <dl class="about__advantage">
+        <div class="about__advantage-wrapper">
+          <dt class="about__advantage-title"><span class="about__advantage-title--number">10</span> лет на рынке</dt>
+          <dd class="about__advantage-description">Работаем<br>
+            как единое целое</dd>
+        </div>
+        <div class="about__advantage-wrapper">
+          <dt class="about__advantage-title"><span class="about__advantage-title--number">+ 11</span> лет стажа</dt>
+          <dd class="about__advantage-description">Опытные и обученые<br> специалисты своего дела</dd>
+        </div>
+        <div class="about__advantage-wrapper">
+          <dt class="about__advantage-title"><span class="about__advantage-title--number">+ 470</span> проектов</dt>
+          <dd class="about__advantage-description">Большое количество<br> реализованных проектов</dd>
+        </div>
+        <div class="about__advantage-wrapper">
+          <dt class="about__advantage-title"><span class="about__advantage-title--number">+ 180</span> клиентов</dt>
+          <dd class="about__advantage-description">Число счастливых<br> клиентов за этот период</dd>
+        </div>
+      </dl>
+    </section>
 
   </main>
   <footer></footer>

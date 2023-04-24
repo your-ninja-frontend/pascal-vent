@@ -3,6 +3,7 @@
   z-index: 0;
   min-height: 956px;
   background: $mobail-bg-gradient;
+  margin-bottom: 70px;
 
   @media screen and (min-width: $tablet) {
     min-height: 1200px;
@@ -10,6 +11,7 @@
 
   @media screen and (min-width: $desktop) {
     min-height: 820px;
+    margin-bottom: 100px;
   }
 }
 
@@ -17,11 +19,10 @@
   position: absolute;
   bottom: 0;
   z-index: -1;
+
   width: 100%;
   height: auto;
-
-  @media screen and (min-width: $tablet) {
-  }
+  margin: 0 auto;
 
   @media screen and (min-width: $desktop) {
     top: 0;
@@ -35,9 +36,6 @@
   width: fit-content;
   margin: 0 auto 30px;
   text-align: right;
-  text-transform: capitalize;
-  font-weight: 600;
-  color: $green-dark;
 
   &--company {
     display: block;

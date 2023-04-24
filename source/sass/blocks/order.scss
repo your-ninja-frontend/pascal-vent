@@ -1,0 +1,89 @@
+.order {
+  padding: 35px 0 45px;
+  background-color: $green-bg;
+
+  @media (min-width: $desktop) {
+    padding: 55px 0 59px;
+    background-image: url('/img/order-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  @media (min-width: $full) {
+    background-position: center center;
+  }
+
+}
+
+.order__title {
+  margin-bottom: 30px;
+  text-transform: none;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 34px;
+    text-align: left;
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+.order__inner-wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.order__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px rgba(73, 93, 76, 0.15);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    font-style: $proxima;
+    font-size: 14px;
+    line-height: 17px;
+    color: $green-light-dark;
+    opacity: 0.7;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 319px;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 290px;
+    margin: 0;
+  }
+}
+
+.order__button {
+  margin-top: 55px;
+  padding: 19px 0;
+  letter-spacing: 0.04em;
+
+  @media (min-width: $tablet) {
+
+    margin: 55px auto 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 209px;
+    margin: 0;
+    margin-left: 40px;
+    padding-bottom: 15px;
+  }
+}

@@ -1,6 +1,6 @@
 .button-menu {
   display: none;
-  
+
   @media screen and (max-width: $tablet-max) {
     display: block;
     width: 49px;
@@ -16,9 +16,11 @@
     cursor: pointer;
 
     &--active {
-      margin-left: auto;
-      margin-top: 25px;
-      margin-right: 25px;
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      z-index: 2;
+      transition: all 0.3s;
       background-color: $green;
       background-image: url("/img/icon-close.svg");
     }

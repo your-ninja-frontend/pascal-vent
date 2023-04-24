@@ -24,6 +24,7 @@
     border-radius: 17px;
     font-size: 15px;
     line-height: 21px;
+    box-shadow: 0 0 0 10px $button-bg1, inset 2px -2px 12px $button-bg2;
   }
 
   &--white-bg {
@@ -32,5 +33,9 @@
 
   &:hover {
     background-color: $green-hover;
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
   }
 }

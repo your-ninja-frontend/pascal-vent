@@ -66,7 +66,12 @@ const scripts = () => {
   return gulp.src(paths.scripts.src)
     .pipe(sourcemaps.init())
     .pipe(concat('script.min.js'))
-    .pipe(buble())
+    .pipe(buble({
+      transforms: {
+          arrow: true,
+          modules: true
+      }
+  }))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.scripts.dest))

@@ -121,9 +121,14 @@ img {
   height: 100vh;
   font-family: $proxima;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: $gray;
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .page__body {
@@ -136,10 +141,14 @@ img {
     @media (max-width: $tablet-max) {
       overflow: hidden;
 
-      &>* {
+      & > * {
         z-index: -1;
       }
     }
+  }
+
+  @media (min-width: $mobail) {
+    overflow-x: hidden;
   }
 }
 

@@ -1,0 +1,12 @@
+.footer {
+  padding: 45px 0 70px;
+  background-image: url("/img/footer-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-width: $desktop) {
+    padding: 86px 0 94px;
+    background-image: url("/img/footer-bg-full.svg");
+  }
+}

@@ -1,0 +1,212 @@
+.work-scheme {
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("/img/work-scheme-bg.png");
+    background-position: top 75px left 40%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $full) {
+    background-position: top 75px left 199px;
+  }
+}
+
+.work-scheme__title {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 99px;
+    text-align: left;
+  }
+}
+
+.work-scheme__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 675px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    gap: 0;
+    max-width: none;
+  }
+}
+
+.work-scheme__item {
+  position: relative;
+
+  &:nth-child(even) {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--order {
+    max-width: 252px;
+
+    @media (min-width: $desktop) {
+      max-width: 446px;
+      margin-bottom: 16px;
+    }
+
+    &::after {
+      top: 2px;
+      left: 197px;
+      width: 125px;
+      height: 115px;
+      background-image: url("/img/work-scheme-order.svg");
+    }
+  }
+
+  &--consultation {
+    max-width: 280px;
+
+    @media (min-width: $desktop) {
+      max-width: 540px;
+      margin-bottom: 90px;
+    }
+
+    &::after {
+      top: 8px;
+      right: 178px;
+      width: 141px;
+      height: 124px;
+      background-image: url("/img/work-scheme-consultation.svg");
+    }
+  }
+
+  &--visit {
+    max-width: 307px;
+
+    @media (min-width: $desktop) {
+      max-width: 496px;
+      margin-bottom: 29px;
+    }
+
+    &::after {
+      top: 2px;
+      left: 147px;
+      width: 172px;
+      height: 113px;
+      background-image: url("/img/work-scheme-visit.svg");
+    }
+  }
+
+  &--schedule {
+    max-width: 292px;
+
+    @media (min-width: $desktop) {
+      max-width: 625px;
+      margin-bottom: 29px;
+    }
+
+    &::after {
+      top: 15px;
+      right: 178px;
+      width: 141px;
+      height: 125px;
+      background-image: url("/img/work-scheme-schedule.svg");
+    }
+  }
+
+  &--contract {
+    max-width: 208px;
+
+    @media (min-width: $desktop) {
+      max-width: 449px;
+      margin-bottom: 85px;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 218px;
+      width: 94px;
+      height: 107px;
+      background-image: url("/img/work-scheme-contract.svg");
+    }
+  }
+
+  &--installation {
+    max-width: 267px;
+
+    @media (min-width: $desktop) {
+      max-width: 397px;
+      margin-bottom: 147px;
+    }
+
+    &::after {
+      top: 9px;
+      right: 154px;
+      width: 165px;
+      height: 103px;
+      background-image: url("/img/work-scheme-installation.svg");
+    }
+  }
+
+  &--completion {
+    text-align: center;
+
+    &::after {
+      top: 43px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 264px;
+      height: 65px;
+      background-image: url("/img/work-scheme-completion.svg");
+    }
+  }
+}
+
+.work-scheme__subtitle {
+  margin-bottom: 12px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: $green-light;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 47px;
+  }
+}
+
+.work-scheme__description {
+  font-size: 14px;
+  color: $green-dark;
+
+  @media (min-width: $desktop) {
+    font-size: inherit;
+    line-height: 26px;
+  }
+}

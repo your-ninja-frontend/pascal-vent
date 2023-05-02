@@ -1,0 +1,141 @@
+.profit {
+  margin-bottom: 85px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+}
+
+.profit__left-column {
+  @media (min-width: $tablet) {
+    max-width: 498px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.profit__title {
+  margin-bottom: 25px;
+}
+
+.profit__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-bottom: 25px;
+}
+
+.profit__icon-wrapper {
+  flex-shrink: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 40px;
+
+  border: 1px solid $green-light;
+  border-radius: 20px;
+}
+
+.profit__list {
+  margin-bottom: 30px;
+}
+
+.profit__list-item {
+  display: flex;
+  gap: 14px;
+
+  margin-bottom: 12px;
+
+  line-height: 26px;
+  color: $green-light-dark;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    flex-shrink: 0;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin-top: 9px;
+
+    border-radius: 50%;
+    background-color: $green-light;
+    box-shadow: 0 0 0 3px $white, 0 0 0 4px $green-light;
+  }
+}
+
+.profit__info {
+  margin-bottom: 60px;
+}
+
+.profit__button {
+  width: 289px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    max-width: 447px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 31px 0;
+  }
+}
+
+
+.profit__right-column {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: relative;
+    display: flex;
+    gap: 35px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 49px;
+      left: 83px;
+      width: 718px;
+      height: 718px;
+      border-radius: 50%;
+      background-color: $green-circle-bg1;
+      filter: blur(175px);
+    }
+  }
+}
+
+.profit__img-right-column {
+  margin-top: 68px;
+}
+
+.profit__img {
+  border-radius: 39px;
+  filter: drop-shadow(0px 0px 10px rgba(26, 26, 26, 0.3));
+}
+
+.profit__img-1 {
+  margin-bottom: 20px;
+}
+
+.profit__img-2 {
+  margin-bottom: 30px;
+}
+
+

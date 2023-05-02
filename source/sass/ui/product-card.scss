@@ -60,6 +60,10 @@
   color: $green-light;
 
   @media (min-width: $tablet) {
-    width: 205px;
+    width: 232px;
+    padding: 0 14px;
+
+    font-size: 16px;
+    line-height: 21px;
   }
 }

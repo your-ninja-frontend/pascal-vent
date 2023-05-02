@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
@@ -342,12 +343,12 @@
       </div>
     </section>
     <article class="order">
-      <form class="order__form container" action="#">
+      <form class="form-order container" action="#">
         <h2 class="order__title">Оставьте заявку и мы с вами свяжемся</h2>
         <div class="order__inner-wrapper">
-          <input class="order__input" type="text" placeholder="Ваше имя">
-          <input class="order__input" type="tel" placeholder="Номер телефона">
-          <button class="order__button button button--small" type="submit" disabled>Отправить</button>
+          <input class="form-order__input order__input" type="text" placeholder="Ваше имя">
+          <input class="form-order__input order__input" type="tel" placeholder="Номер телефона">
+          <button class="form-order__button order__button button button--small" type="submit" disabled>Отправить</button>
         </div>
       </form>
     </article>
@@ -388,10 +389,217 @@
         </div>
       </dl>
     </section>
-
+    <section class="profit container">
+      <div class="profit__left-column">
+        <h2 class="profit__title">Комфорт и уют<br> в любое время года</h2>
+        <div class="profit__icons">
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-1.svg" alt="">
+          </div>
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-2.svg" alt="">
+          </div>
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-3.svg" alt="">
+          </div>
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-4.svg" alt="">
+          </div>
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-5.svg" alt="">
+          </div>
+          <div class="profit__icon-wrapper">
+            <img class="profit__icon" src="/img/profit-icon-6.svg" alt="">
+          </div>
+        </div>
+        <ul class="profit__list">
+          <li class="profit__list-item">Создание комфортных условий для жизни</li>
+          <li class="profit__list-item">Чистый, свежий, приточный воздух круглый год</li>
+          <li class="profit__list-item">Удаление не приятных запахов, избыточной влажности и<br> накопившегося
+            углекислого
+            газа из помещений</li>
+          <li class="profit__list-item">Поддержание комфортной температуры и<br>
+            влажности воздуха зимой и летом</li>
+        </ul>
+        <p class="profit__info"><b>Pascsl Vent</b> поможет улучшить ваше самочувствие и повысить работоспособность днем,
+          а
+          ночью подарит здоровый и крепкий сон. Это важно для тех, кто следит за своим здоровьем и здоровьем своих
+          близких.</p>
+        <button class="profit__button button">Заполнить заявку</button>
+      </div>
+      <div class="profit__right-column">
+        <div class="profit__img-left-column">
+          <img class="profit__img profit__img-1" src="/img/profit-img-1.jpg" srcset="/img/profit-img-1.webp" alt=""
+            width="273" height="358">
+          <img class="profit__img" src="/img/profit-img-3.jpg" srcset="/img/profit-img-3.webp" alt="" width="273"
+            height="424">
+        </div>
+        <div class="profit__img-right-column">
+          <img class="profit__img profit__img-2" src="/img/profit-img-2.jpg" srcset="/img/profit-img-2.webp" alt=""
+            width="267" height="350">
+          <img class="profit__img" src="/img/profit-img-4.jpg" srcset="/img/profit-img-4.webp" alt="" width="267"
+            height="294">
+        </div>
+      </div>
+    </section>
+    <section class="work-scheme container">
+      <h2 class="work-scheme__title">Понятная и эффективная схема работы</h2>
+      <ul class="work-scheme__list">
+        <li class="work-scheme__item work-scheme__item--order">
+          <h3 class="work-scheme__subtitle">Получение заявки</h3>
+          <p class="work-scheme__description">Заполните форму, укажите свои данные и отправьте нашим менеджерам в
+            обработку</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--consultation">
+          <h3 class="work-scheme__subtitle">Консультация</h3>
+          <p class="work-scheme__description">После обработки Вашей заявки, мы связываемся с Вами, выявляем потребности
+            и пожелания, а также проводим
+            техническую консультацию</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--visit">
+          <h3 class="work-scheme__subtitle">Выезд на объект</h3>
+          <p class="work-scheme__description">В назначенное время мы выезжаем на объект и согласовываем основные
+            технические решения, обсуждаем
+            техническое задание</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--schedule">
+          <h3 class="work-scheme__subtitle">Составляем График</h3>
+          <p class="work-scheme__description">На этом этапе мы составляем коммерческое предложение и занимаемся
+            согласованием графика работ
+            (проектирования, закупки оборудования и монтажа).</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--contract">
+          <h3 class="work-scheme__subtitle">Договор</h3>
+          <p class="work-scheme__description">Мы заключаем с Вами договор и начинаем проектирование и согласование
+            проекта</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--installation">
+          <h3 class="work-scheme__subtitle">Поставка и монтаж</h3>
+          <p class="work-scheme__description">На этом этапе, происходит поставка всех материалов и начинается выполнение
+            монтажных работ</p>
+        </li>
+        <li class="work-scheme__item work-scheme__item--completion">
+          <h3 class="work-scheme__subtitle">Подписание акта выполненных работ</h3>
+        </li>
+      </ul>
+    </section>
+    <section class="portfolio container">
+      <div class="portfolio__wrapper">
+        <h2 class="portfolio__title">Портфолио и процесс работы</h2>
+        <p class="portfolio__info">Технические решения, принятые в рабочих чертежах, соответствуют требованиям
+          экологических,
+          санитарно-гигиенических, противопожарных и других норм и правил, и обеспечивают безопасную для жизни людей
+          эксплуатацию объекта при соблюдении предусмотренных рабочими чертежами мероприятий.</p>
+      </div>
+      <div class="swiper portfolio__swiper">
+        <div class="swiper-wrapper portfolio__swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="portfolio__work portfolio__work-1" href="#">
+              <h3 class="portfolio__work-title">Приточная вентиляция</h3>
+              <p class="portfolio__work-info">Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="portfolio__work portfolio__work-2" href="#">
+              <h3 class="portfolio__work-title">Приточная вентиляция</h3>
+              <p class="portfolio__work-info">Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="portfolio__work portfolio__work-3" href="#">
+              <h3 class="portfolio__work-title">Канальные кондиционеры</h3>
+              <p class="portfolio__work-info">Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="portfolio__work portfolio__work-4" href="#">
+              <h3 class="portfolio__work-title">Канальные кондиционеры</h3>
+              <p class="portfolio__work-info">Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="clients__wrapper container">
+        <div class="clients__left-column">
+          <h2 class="clients__title">
+            <span class="clients__title--line">Известные клиенты </span>
+            <span class="clients__title--hidden">которые нам доверились</span>
+          </h2>
+          <p class="clients__info">Реализованы проекты квартир и коммерческих помещений в жилых комплексах
+            от крупных застройщиков таких как: Level, ФСК, MR групп, ПИК, Самолет, Гранель, Донстрой, Пионер, Эталон,
+            А101,
+            Sminex, Vesper, Инград, КРОСТ, МИЦ. Мы ценим каждого клиента <b>Pascal Vent</b> и с радостью готовы
+            расширять нашу
+            клиентскую базу.</p>
+        </div>
+        <div class="clients__right-column">
+          <div class="swiper clients__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="clients__card">
+                  <img src="img/clients-img-1.png" srcset="/img/clients-img-1.webp" alt="" width="188" height="40">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients__card">
+                  <img src="img/clients-img-2.png" srcset="/img/clients-img-2.webp" alt="" width="188" height="40">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients__card">
+                  <img src="img/clients-img-1.png" srcset="/img/clients-img-1.webp" alt="" width="188" height="40">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients__card">
+                  <img src="img/clients-img-2.png" srcset="/img/clients-img-2.webp" alt="" width="188" height="40">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="container">
+      <a href="">
+        <img src="/img/logo.svg" alt="" width="212" height="65">
+      </a>
+      <section>
+        <h2>Контакты</h2>
+        <address>
+          <div>
+            <a href="tel:+74923736331">+ 7 492 373 63 31</a>
+            <a href="tel:+74923736331">+ 7 492 373 63 31</a>
+            <a href="mailto:PascalVent@mail.ru">PascalVent@mail.ru</a>
+          </div>
+          <div>
+            <p>Пн - Сб: 9:00 - 19:00 Вс: выходной</p>
+            <p>Москва ул. Плеханова, 28А</p>
+          </div>
+        </address>
+      </section>
+      <form class="form-order" action="#">
+        <h2 class="">Заполнить заявку</h2>
+        <input class="form-order__input" type="text" placeholder="Ваше имя">
+        <input class="form-order__input" type="tel" placeholder="Номер телефона">
+        <button class="form-order__button button button--small" type="submit" disabled>Отправить</button>
+      </form>
+      <div>
+        <p>Компания <b>"Pascal Vent"</b> входит в число лучших специализированных организаций, с широким ассортиментом товаров и услуг, предназначенных для систем вентиляции и кондиционирования, предоставляющих высокий сервис и удобство обслуживания нашим клиентам.</p>
+        <p>Чистый воздух вместе с <span>Pascal Vent</span></p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/js/script.min.js"></script>
 </body>
 

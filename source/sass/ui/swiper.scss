@@ -1,0 +1,42 @@
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+
+  &::after {
+    flex-shrink: 0;
+    content: "";
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    background-color: $green;
+    box-shadow: 0 0 0 6px rgba($green-light, 0.25),
+      inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+
+    background-image: url("/img/swiper-nav-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $green-hover;
+    }
+  }
+}
+
+.swiper .swiper-button-prev {
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper .swiper-button-next.swiper-button-disabled,
+.swiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+
+  &::after {
+    background-color: $white;
+    box-shadow: 0 0 0 6px rgba($white, 0.6);
+    background-image: url("/img/swiper-nav-btn-disabled.svg");
+  }
+}

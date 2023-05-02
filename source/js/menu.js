@@ -19,8 +19,6 @@ const onMenuEscKeydown = e => escKeydown(e, closeMenu);
 
 const isMenuActive = () => menuBtn.classList.contains('button-menu--active');
 
-console.log(body);
-
 const toggleMenu = () => {
   nav.classList.toggle('navigation--active');
   menuBtn.classList.toggle('button-menu--active');
